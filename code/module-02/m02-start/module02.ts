@@ -43,12 +43,12 @@ console.log(a);
    the constants "Fall", "Winter", "Spring", and "Summer". Then, update the function so 
    you can pass in the season by referencing an item in the enum, for example 
    Season.Fall, instead of the literal string "Fall". */
-
+  /*
 function whichMonths(season) {
 
     let monthsInSeason: string;
 
-    switch (season) {
+  switch (season) {
         case "Fall":
             monthsInSeason = "September to November";
             break;
@@ -63,9 +63,16 @@ function whichMonths(season) {
     }
 
     return monthsInSeason;
-}
+}*/
 
-console.log(whichMonths("Fall"));
+enum monthsInSeason {
+    Fall = "September to November",
+    Winter = "December to February",
+    Spring = "March to May",
+    Summer = "June to August"
+}; 
+
+console.log(monthsInSeason.Fall);
 
 /* EXERCISE 4
    TODO: Declare the array as the type to match the type of the items in the array. */
